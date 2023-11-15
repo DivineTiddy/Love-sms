@@ -1,0 +1,55 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(news.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.answer {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: aliceblue;
+  color: darkblue;
+  text-align: center;
+  font-family: serif;
+  font-size: larger;
+}
+.romance {
+  text-align: center;
+  font-family: serif;
+  font-size: larger;
+  font-weight: bolder;
+}
+.button {
+  border: none;
+  color: wheat;
+  padding: 10px;
+  margin: 10px;
+  background-image: linear-gradient(rgb(61, 63, 211), rgb(70, 15, 143));
+}
+#holder {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  border-radius: 6px;
+}
+input {
+  width: auto;
+  text-align: center;
+  background-color: antiquewhite;
+  border: none;
+}
+footer {
+  text-align: center;
+  width: 90%;
+}
