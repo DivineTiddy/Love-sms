@@ -1,6 +1,25 @@
 "use strict";
+let moveDown = 5;
+const i = 0;
+
 document.querySelector(`.button`).addEventListener(`click`, function () {
   let answer = Number(document.querySelector(`.select`).value);
+  if (answer < moveDown) {
+    moveDown--;
+    document.querySelector(`.moveDown`).textContent = `Your limit: ${moveDown} left`;
+  } else if (answer == moveDown) {
+    moveDown--;
+    document.querySelector(`.moveDown`).textContent = `Your limit: ${moveDown} left`;
+  } else if (moveDown < answer) {
+    moveDown--;
+    document.querySelector(`.moveDown`).textContent = `Your limit: ${moveDown} left`;
+  }
+  if (moveDown == i || moveDown < i) {
+    document.querySelector('p').style.color = `white`;
+  }
+  if (moveDown == i || moveDown < i) {
+    document.querySelector(`.moveDown`).textContent = `chat over try again`;
+  }
 
   switch (answer) {
     case 1:
